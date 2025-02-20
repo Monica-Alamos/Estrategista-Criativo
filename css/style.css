@@ -1,0 +1,179 @@
+/* Estilos padrão para desktop */
+body {
+    background: #F9F9F9;
+    color: #F9F9F9; /*cor de texto sem tag*/
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+}
+
+/* FORMATAÇÃO DE TEXTO*/
+h1, h2, h3, h4, h5{
+    font-size: 30px;
+    font-family: "Tarroma", "Arial", monospace;
+    color: #565656;
+}
+h1{
+	font-size: 53px;
+    font-family: "Tarroma", "Arial", monospace;
+    color: #565656;
+	margin-bottom: 5px;
+	
+}
+h2{
+	color: #F51920;
+	margin-top: 5px;
+	
+	
+}
+p{
+    font-family: "Arial", monospace;
+    color:#577a6a;
+}
+
+/* CABEÇALHO */
+header{
+    background: #F51920;
+    width: 100%;
+    height: 80px;
+    top: 0;
+
+
+}
+
+.menu {
+    display: flex;
+    gap: 20px; /* Espaçamento entre as imagens */
+    align-items: center; /* Alinha verticalmente */
+	margin-top: 10px;
+}
+
+.menu a img {
+	margin-left: 0;
+    max-width: 50px; /* Ajuste o tamanho das imagens */
+    height: auto;
+}
+
+/* Estiliza a navegação */
+nav {
+    background-color: #F51920; /* Cor de fundo */
+    padding: 10px 20px; /* Espaçamento interno */
+	margin-left: 3%; /* Centraliza o conteúdo */
+}
+
+/* Container principal para distribuir os itens */
+.menu {
+	display: flex;
+    justify-content: space-between; /* Mantém os itens nas extremidades */
+    align-items: center;
+	margin-top: 10px;
+}
+
+
+/* Ajuste de tamanho das imagens */
+.menu img {
+    max-width: 40px;
+    height: auto;
+}
+
+/* Ícones sociais alinhados à esquerda */
+.social {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os ícones */
+    align-items: flex-end; /* Alinha as imagens pela parte inferior */
+}
+
+.social img {
+    max-height: 40px; /* Define um tamanho máximo para todas as imagens */
+    width: auto; /* Mantém a proporção */
+    object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+}
+
+/* Bandeiras alinhadas à direita */
+.bandeiras {
+    display: flex;
+    gap: 10px;
+	
+}
+
+
+/*FOTO*/
+
+.padraoFoto img{
+	border-radius: 20px;
+	max-height: 200px;
+	
+}
+/* ESTILIZAÇÃO DO CONTAINER PRINCIPAL */
+.container {
+    display: flex;
+    align-items: center; /* Centraliza os elementos verticalmente */
+    justify-content: space-between; /* Mantém a imagem à esquerda e o texto à direita */
+    flex-wrap: wrap; /* Permite quebra para mobile */
+    gap: 20px; /* Espaçamento entre os elementos */
+    padding: 30px 60px;
+}
+
+/* IMAGEM ESQUERDA */
+.img-container {
+    flex: 1; /* Ocupa 50% do espaço */
+    max-width: 300px; /* Limita o tamanho da imagem */
+}
+
+.img-left {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* TEXTO DIREITA */
+.text-container {
+    flex: 1;
+    max-width: 100%; /* Limita a largura do texto */
+	display: flex;
+	justify-content: center;
+}
+
+/*RODAPÉ*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #F51920;
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+/* Para tablets (largura máxima de 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+    }
+	.container {
+        flex-direction: column; /* Altera para coluna no mobile */
+        align-items: center; /* Centraliza os elementos */
+        text-align: center; /* Alinha o texto ao centro */
+    }
+	.img-container,
+    .text-container {
+        max-width: 100%; /* Faz ambos ocuparem toda a largura */
+    }
+}
+
+/* Para celulares (largura máxima de 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: %; /* Deixa o texto menor */
+    }
+
+    header{
+
+    }
+	h1 { font-size: 6vw; }
+	h2 { font-size: 4vw; }
+	h3 { font-size: 4vw; }
+	
+}
